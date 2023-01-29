@@ -3,3 +3,30 @@ https://stackoverflow.com/questions/10784523/how-do-i-merge-changes-to-a-single-
 git checkout A
 
 git checkout --patch B f
+
+
+or
+
+git checkout A
+Create new branch based on A:
+
+git checkout -b tempAB
+Merge B into tempAB
+
+git merge B
+Copy the sha1 hash of the merge:
+
+git log
+
+commit 8dad944210dfb901695975886737dc35614fa94e
+Merge: ea3aec1 0f76e61
+Author: matthewe <matthewe@matthewe.com>
+Date:   Wed Oct 3 15:13:24 2012 -0700
+
+Merge branch 'B' into tempAB
+Checkout your working branch:
+
+git checkout A
+Checkout your fixed-up file:
+
+git checkout 7e65b5a52e5f8b1979d75dffbbe4f7ee7dad5017 file.txt
