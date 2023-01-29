@@ -1,11 +1,5 @@
-tulisan ke 1
-tulisan ke 2
-tulisan ke 3
-tulisan ke 4
-tulisan ke 5
-tulisan ke 6
-tulisan ke 7
-tulisan ke 8
-tulisan ke 9
-tulisan ke 10
-tulisan ke 11
+https://stackoverflow.com/questions/10784523/how-do-i-merge-changes-to-a-single-file-rather-than-merging-commits
+
+git checkout A
+
+git checkout --patch B f
